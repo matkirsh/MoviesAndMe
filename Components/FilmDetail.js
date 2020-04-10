@@ -80,11 +80,6 @@ class FilmDetail extends React.Component {
     })
   }
 
-componentDidUpdate(){
-  console.log("componentDidUpdate:")
-  console.log(this.props.favoritesFilm)
-}
-
   _toggleFavorite(){
     const action = {type: "TOGGLE_FAVORITE", value: this.state.film}
     this.props.dispatch(action)
