@@ -75,6 +75,7 @@ class Search extends React.Component {
         />
         <FlatList
           data={this.state.films}
+          extraData = {this.props.favoritesFilm}
           extraData={this.props.favoritesFilm}
           keyExtractor={(item) => item.id.toString()}
           renderItem={({item}) =>
